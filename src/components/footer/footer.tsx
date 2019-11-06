@@ -17,21 +17,25 @@ const BottomBar: any = styled.div`
 
 const Logo = styled.img`
     display: inline-block;
-    height: -webkit-fill-available;
+    height: 100%;
     float: left;
     margin-left: 5%;
 `;
 
-const Header = styled.div`
+const Header = styled.svg`
     position: relative;
-    top: 35%;
-    display: inline-block;
+    top: 60%;
     float: left;
+    width: 40%;
+    margin-left: 5%;
+    overflow: visible;
+`;
+
+const Text = styled.text `
     color: white;
-    font-size: 5vw;
     font-family: Montserrat,sans-serif;
     font-weight: 700;
-    margin-left: 5%;
+    fill: white;    
 `;
 
 export default class Footer extends React.PureComponent<IFooterProps> {
@@ -39,7 +43,9 @@ export default class Footer extends React.PureComponent<IFooterProps> {
         return(
             <BottomBar>
                 <Logo src = { images.logo }/>
-                <Header>{ this.props.text }</Header>
+                <Header viewBox='0 0 100 100'>
+                    <Text>{ this.props.text }</Text>
+                </Header>
             </BottomBar>
         )
     }

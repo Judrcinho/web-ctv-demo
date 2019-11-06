@@ -1,13 +1,7 @@
 import React from 'react';
-import Tile from './components/tile/tile';
-import Footer from './components/footer/footer';
-import styled, {createGlobalStyle} from 'styled-components';
-import { images } from './assets/assets';
+import Card from './components/card/card';
+import  styled, {createGlobalStyle} from 'styled-components';
 
-const Card = styled.div`
-  position: relative;
-  text-align: center;
-`;
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -15,12 +9,15 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+const Container = styled.div`
+  text-align: center;
+`;
+
 export default class App extends React.PureComponent {
   render() {
-    return(<Card>
+    return(<Container>
               <GlobalStyle />
-              <Tile image = { images.tile }/>
-              <Footer text = "Home and Away" />
-            </Card>)
+              <Card />
+            </Container>)
   }
 }
