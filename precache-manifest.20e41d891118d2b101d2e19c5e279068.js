@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a9e5b9f51720ad93e5a513fe3845af21",
+    "revision": "226291a7eea49a6d4052c58b54faab89",
     "url": "/web-ctv-demo/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/web-ctv-demo/static/js/2.1468561d.chunk.js"
   },
   {
-    "revision": "596b6ad3556827a1a9ed",
-    "url": "/web-ctv-demo/static/js/main.77b5c3ef.chunk.js"
+    "revision": "333e5bac593480829139",
+    "url": "/web-ctv-demo/static/js/main.fb595599.chunk.js"
   },
   {
     "revision": "6279a627ade2c1dd96e2",
